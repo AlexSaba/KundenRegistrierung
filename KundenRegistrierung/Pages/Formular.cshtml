@@ -1,0 +1,59 @@
+﻿@page
+@model KundenRegistrierung.Pages.FormularModel
+@{
+}
+
+<h2>Registrierungsformular</h2>
+<div class="form-group">
+    <label asp-for="VorName">Vorname</label>
+    <input type="text"
+           id="VorName"
+           name="VorName"
+           required
+           minlength="4"
+           maxlength="8"
+           size="10" />
+    <span asp-validation-for="VorName" class="text-danger"></span>
+
+    <label asp-for="NachName">Nachname</label>
+    <input type="text"
+           id="NachName"
+           name="NachName"
+           required
+           minlength="4"
+           maxlength="8"
+           size="10" />
+    <span asp-validation-for="NachName" class="text-danger"></span>
+</div>
+
+<!--
+        <form method="get">
+            <div class="form-group">
+                <label asp-for="VorName"></label>
+                <input asp-for="VorName" class="form-control" />
+                <span asp-validation-for="VorName" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="NachName"></label>
+                <input asp-for="NachName" class="form-control" />
+                <span asp-validation-for="NachName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefon"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Passwort"></label>
+                <input asp-for="Passwort" type="password" class="form-control" />
+                <span asp-validation-for="Passwort" class="text-danger"></span>
+            </div>
+            <input> type="submit" class="btn btn-primary">Registrieren</input>
+        </form>
+ -->
