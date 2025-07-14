@@ -22,11 +22,34 @@ namespace KundenRegistrierung.Pages
             {
                NachName = value;
             }
-
         }
-        public string? Email { get; set; } = null;
-        public int? Telefon { get; set; } = null;
-        public string? Passwort { get; set; } = null;
+
+        public string? Email
+        {
+            get => Email;
+            set
+            {
+                Email = value;
+            }
+        }
+
+        public string? Telefon
+        {
+            get => Telefon;
+            set
+            {
+                Telefon = value;
+            }
+        }
+
+        public string? Passwort
+        {
+            get => Passwort;
+            set
+            {
+                Passwort = value;
+            }
+        }
 
         public void OnGet()
         {

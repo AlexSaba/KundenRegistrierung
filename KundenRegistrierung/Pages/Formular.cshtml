@@ -5,7 +5,7 @@
 
 <h2>Registrierungsformular</h2>
 <div class="form-group">
-    <label asp-for="VorName">Vorname</label>
+    <label asp-for="VorName" class="mb-2">Vorname</label>
     <input type="text"
            id="VorName"
            name="VorName"
@@ -14,8 +14,20 @@
            maxlength="8"
            size="10" />
     <span asp-validation-for="VorName" class="text-danger"></span>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
 
-    <label asp-for="NachName">Nachname</label>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</div>
+
+<div class="form-group">
+    <label asp-for="NachName" class="mb-2">Nachname</label>
     <input type="text"
            id="NachName"
            name="NachName"
@@ -26,6 +38,17 @@
     <span asp-validation-for="NachName" class="text-danger"></span>
 </div>
 
+<div class="form-group">
+    <label asp-for="Email" class="mb-2">E-Mail</label>
+    <input type="text"
+           id="Email"
+           name="Email"
+           required
+           minlength="4"
+           maxlength="8"
+           size="10" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+</div>
 <!--
         <form method="get">
             <div class="form-group">
