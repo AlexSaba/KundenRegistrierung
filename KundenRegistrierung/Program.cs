@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace KundenRegistrierung
 {
     public class Program
@@ -8,6 +10,8 @@ namespace KundenRegistrierung
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddDbContext<KundenContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Data Source=kunden.db")));
 
             var app = builder.Build();
 
