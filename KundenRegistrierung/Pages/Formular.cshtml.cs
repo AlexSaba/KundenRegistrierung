@@ -54,5 +54,11 @@ namespace KundenRegistrierung.Pages
         public void OnGet()
         {
         }
+
+        public void OnPost()
+        {
+            // Die Properties VorName, NachName, Email, Telefon, Passwort
+            // sind jetzt mit den Formulardaten befüllt
+        }
     }
 }
